@@ -2,15 +2,15 @@
 
 Campaign website for Jarren Hurt.
 
-How to produce build for production, running in Docker:
+How to produce build for production, running in Docker.
 
-# Build the image
+Build the image:
 docker build -t hurt-in-91:latest .
 
-# Run locally (testing)
+Run locally (testing):
 docker run -p 3000:3000 hurt-in-91:latest
 
-# Run on your VPS
+Run on your VPS:
 docker run -d -p 80:3000 --name hurt-in-91 --restart unless-stopped hurt-in-91:latest
 
 -----------------------------------------------------------------------------
