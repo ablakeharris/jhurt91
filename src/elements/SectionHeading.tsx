@@ -9,7 +9,7 @@ export const SectionHeading = ({
 }: SectionHeadingProps) => {
   return (
     <h2
-      className={`text-4xl font-bold text-gray-900 dark:text-white mb-6 ${centered ? 'text-center mb-12' : ''}`}
+      className={`text-4xl font-bold text-neutral-900 dark:text-white mb-6 ${centered ? 'text-center mb-12' : ''}`}
     >
       {children}
     </h2>

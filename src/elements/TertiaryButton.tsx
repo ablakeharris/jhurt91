@@ -9,7 +9,7 @@ export const TertiaryButton = ({
 }: TertiaryButtonProps) => {
   return (
     <button
-      className={`bg-gray-700 hover:bg-gray-800 text-white px-8 py-3 rounded-full font-semibold transition-colors ${className}`}
+      className={`bg-neutral-700 hover:bg-neutral-800 text-white px-8 py-3 rounded-full font-semibold transition-colors ${className}`}
       {...props}
     >
       {children}

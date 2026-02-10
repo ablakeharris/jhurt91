@@ -17,7 +17,7 @@ export const PrimaryButton = ({
 
   return (
     <button
-      className={`bg-blue-700 hover:bg-blue-800 text-white rounded-full font-semibold transition-colors ${sizeClasses[size]} ${className}`}
+      className={`bg-primary-700 hover:bg-primary-800 text-white rounded-full font-semibold transition-colors ${sizeClasses[size]} ${className}`}
       {...props}
     >
       {children}

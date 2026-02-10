@@ -4,7 +4,7 @@ import { SecondaryButton } from '@/src/elements/SecondaryButton';
 
 export const Navigation = () => {
   return (
-    <nav className="fixed top-0 w-full bg-blue-700 dark:bg-blue-900 text-white z-50 shadow-md">
+    <nav className="fixed top-0 w-full bg-primary-700 dark:bg-primary-900 text-white z-50 shadow-md">
       <NavContainer>
         <div className="flex justify-between items-center h-16">
           <div className="text-xl font-bold">JARREN HURT</div>

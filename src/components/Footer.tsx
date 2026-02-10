@@ -3,7 +3,7 @@ import { FooterLink } from '@/src/elements/FooterLink';
 
 export const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-400 py-12 px-4">
+    <footer className="bg-neutral-900 text-neutral-400 py-12 px-4">
       <Container width="wide" centered>
         <p className="text-lg font-semibold text-white mb-4">
           JARREN HURT FOR STATE LEGISLATURE

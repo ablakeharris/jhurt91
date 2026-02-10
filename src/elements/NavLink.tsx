@@ -9,7 +9,7 @@ export const NavLink = ({
 }: NavLinkProps) => {
   return (
     <a
-      className={`hover:text-blue-200 transition-colors ${className}`}
+      className={`hover:text-primary-200 transition-colors ${className}`}
       {...props}
     >
       {children}

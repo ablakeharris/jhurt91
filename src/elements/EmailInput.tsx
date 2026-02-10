@@ -11,7 +11,7 @@ export const EmailInput = ({
     <input
       type="email"
       placeholder={placeholder}
-      className={`px-6 py-3 rounded-full text-gray-900 flex-1 max-w-md ${className}`}
+      className={`px-6 py-3 rounded-full text-neutral-900 flex-1 max-w-md ${className}`}
       {...props}
     />
   );

@@ -9,7 +9,7 @@ export const InverseButton = ({
 }: InverseButtonProps) => {
   return (
     <button
-      className={`bg-white text-blue-700 hover:bg-gray-100 px-8 py-4 rounded-full text-lg font-semibold transition-colors ${className}`}
+      className={`bg-white text-primary-700 hover:bg-neutral-100 px-8 py-4 rounded-full text-lg font-semibold transition-colors ${className}`}
       {...props}
     >
       {children}

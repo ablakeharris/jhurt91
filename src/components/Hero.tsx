@@ -4,16 +4,16 @@ import { SecondaryButton } from '@/src/elements/SecondaryButton';
 
 export const Hero = () => {
   return (
-    <section className="pt-32 pb-20 px-4 bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900">
+    <section className="pt-32 pb-20 px-4 bg-gradient-to-b from-primary-50 to-white dark:from-neutral-800 dark:to-neutral-900">
       <Container centered>
-        <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6">
+        <h1 className="text-5xl md:text-7xl font-bold text-neutral-900 dark:text-white mb-6">
           Jarren Hurt:
           <br />
-          <span className="text-blue-700 dark:text-blue-400">
+          <span className="text-primary-700 dark:text-primary-400">
             Fighting for Our Future.
           </span>
           <br />
-          <span className="text-blue-700 dark:text-blue-400">
+          <span className="text-primary-700 dark:text-primary-400">
             Building Our Community.
           </span>
         </h1>

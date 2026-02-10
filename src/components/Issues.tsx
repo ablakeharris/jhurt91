@@ -26,7 +26,7 @@ that prepare workers for the economy of tomorrow.`,
 
 export const Issues = () => {
   return (
-    <section id="issues" className="py-20 px-4 bg-white dark:bg-gray-900">
+    <section id="issues" className="py-20 px-4 bg-white dark:bg-neutral-900">
       <Container>
         <SectionHeading centered>WHERE I STAND</SectionHeading>
         <div className="space-y-8">

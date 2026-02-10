@@ -7,9 +7,9 @@ interface IssueCardProps {
 
 export const IssueCard = ({ title, description }: IssueCardProps) => {
   return (
-    <div className="border-l-4 border-blue-700 pl-6">
+    <div className="border-l-4 border-primary-700 pl-6">
       <CardHeading>{title}</CardHeading>
-      <p className="text-lg text-gray-700 dark:text-gray-300">{description}</p>
+      <p className="text-lg text-neutral-700 dark:text-neutral-300">{description}</p>
     </div>
   );
 };

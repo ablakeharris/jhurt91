@@ -17,7 +17,7 @@ export const SecondaryButton = ({
 
   return (
     <button
-      className={`bg-red-600 hover:bg-red-700 text-white rounded-full font-semibold transition-colors ${sizeClasses[size]} ${className}`}
+      className={`bg-secondary-600 hover:bg-secondary-700 text-white rounded-full font-semibold transition-colors ${sizeClasses[size]} ${className}`}
       {...props}
     >
       {children}

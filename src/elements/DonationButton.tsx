@@ -9,7 +9,7 @@ export const DonationButton = ({
 }: DonationButtonProps) => {
   return (
     <button
-      className={`bg-blue-700 hover:bg-blue-800 text-white py-4 rounded-lg text-xl font-semibold transition-colors w-full ${className}`}
+      className={`bg-primary-700 hover:bg-primary-800 text-white py-4 rounded-lg text-xl font-semibold transition-colors w-full ${className}`}
       {...props}
     >
       ${amount}
