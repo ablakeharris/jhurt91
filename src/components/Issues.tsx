@@ -27,14 +27,7 @@ that prepare workers for the economy of tomorrow.`,
 
 export const Issues = () => {
   return (
-    <Box
-      as="section"
-      id="issues"
-      py={20}
-      px={4}
-      bg="white"
-      _dark={{ bg: 'gray.900' }}
-    >
+    <Box as="section" id="issues" py={20} px={4}>
       <Container>
         <SectionHeading centered>WHERE I STAND</SectionHeading>
         <VStack gap={8} align="stretch">

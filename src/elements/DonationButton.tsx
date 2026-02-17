@@ -7,9 +7,6 @@ interface DonationButtonProps extends ButtonProps {
 export const DonationButton = ({ amount, ...props }: DonationButtonProps) => {
   return (
     <Button
-      bg="blue.600"
-      color="white"
-      _hover={{ bg: 'blue.700' }}
       borderRadius="lg"
       fontSize="xl"
       fontWeight="semibold"

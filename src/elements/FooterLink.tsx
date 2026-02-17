@@ -9,7 +9,7 @@ interface FooterLinkProps extends ChakraLinkProps {
 
 export const FooterLink = ({ children, ...props }: FooterLinkProps) => {
   return (
-    <ChakraLink _hover={{ color: 'white' }} transition="colors" {...props}>
+    <ChakraLink _hover={{ color: 'white' }} {...props}>
       {children}
     </ChakraLink>
   );

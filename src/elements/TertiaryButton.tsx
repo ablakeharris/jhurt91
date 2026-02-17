@@ -6,16 +6,7 @@ interface TertiaryButtonProps extends ButtonProps {
 
 export const TertiaryButton = ({ children, ...props }: TertiaryButtonProps) => {
   return (
-    <Button
-      bg="gray.700"
-      color="white"
-      _hover={{ bg: 'gray.800' }}
-      borderRadius="full"
-      fontWeight="semibold"
-      px={8}
-      py={3}
-      {...props}
-    >
+    <Button borderRadius="full" fontWeight="semibold" px={8} py={3} {...props}>
       {children}
     </Button>
   );

@@ -7,18 +7,13 @@ export const Donation = () => {
   const amounts = [10, 25, 50, 100, 250, 500];
 
   return (
-    <Box as="section" py={20} px={4} bg="gray.50" _dark={{ bg: 'gray.800' }}>
+    <Box as="section" py={20} px={4}>
       <Container centered>
         <VStack gap={8} align="center">
-          <Heading
-            as="h2"
-            size="2xl"
-            color="gray.900"
-            _dark={{ color: 'white' }}
-          >
+          <Heading as="h2" size="2xl">
             DONATE TO JARREN HURT FOR STATE LEGISLATURE
           </Heading>
-          <Text fontSize="lg" color="gray.600" _dark={{ color: 'gray.400' }}>
+          <Text fontSize="lg">
             Every contribution helps us reach more voters and build a grassroots
             movement.
           </Text>

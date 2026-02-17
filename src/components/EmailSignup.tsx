@@ -5,14 +5,7 @@ import { EmailInput } from '@/src/elements/EmailInput';
 
 export const EmailSignup = () => {
   return (
-    <Box
-      as="section"
-      py={16}
-      px={4}
-      bg="blue.700"
-      _dark={{ bg: 'blue.900' }}
-      color="white"
-    >
+    <Box as="section" py={16} px={4}>
       <Container width="narrow" centered>
         <VStack gap={6} align="center">
           <Box as="h2" fontSize="3xl" fontWeight="bold">
@@ -28,7 +21,7 @@ export const EmailSignup = () => {
             <EmailInput placeholder="Enter your email" />
             <SecondaryButton type="submit">SIGN UP</SecondaryButton>
           </Stack>
-          <Text fontSize="sm" color="blue.100">
+          <Text fontSize="sm">
             By signing up, you agree to receive campaign updates and event
             invitations.
           </Text>

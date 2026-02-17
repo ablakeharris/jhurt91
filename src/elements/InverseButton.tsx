@@ -7,9 +7,6 @@ interface InverseButtonProps extends ButtonProps {
 export const InverseButton = ({ children, ...props }: InverseButtonProps) => {
   return (
     <Button
-      bg="white"
-      color="blue.600"
-      _hover={{ bg: 'gray.100' }}
       borderRadius="full"
       fontWeight="semibold"
       fontSize="lg"

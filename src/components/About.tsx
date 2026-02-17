@@ -4,14 +4,7 @@ import { PrimaryButton } from '@/src/elements/PrimaryButton';
 
 export const About = () => {
   return (
-    <Box
-      as="section"
-      id="about"
-      py={20}
-      px={4}
-      bg="white"
-      _dark={{ bg: 'gray.900' }}
-    >
+    <Box as="section" id="about" py={20} px={4}>
       <Container width="wide">
         <Grid
           templateColumns={{ base: '1fr', md: '1fr 1fr' }}
@@ -19,21 +12,10 @@ export const About = () => {
           alignItems="center"
         >
           <VStack align="start" gap={4}>
-            <Heading
-              as="h2"
-              size="2xl"
-              color="gray.900"
-              _dark={{ color: 'white' }}
-            >
+            <Heading as="h2" size="2xl">
               MEET JARREN
             </Heading>
-            <VStack
-              align="start"
-              gap={4}
-              fontSize="lg"
-              color="gray.700"
-              _dark={{ color: 'gray.300' }}
-            >
+            <VStack align="start" gap={4} fontSize="lg">
               <Text>
                 Jarren Hurt is a public school teacher, community organizer, and
                 Democratic candidate running for State Legislature, committed to
@@ -55,16 +37,12 @@ export const About = () => {
             <PrimaryButton mt={8}>Learn More</PrimaryButton>
           </VStack>
           <Flex
-            bg="gray.200"
-            _dark={{ bg: 'gray.700' }}
             borderRadius="lg"
             aspectRatio="1"
             align="center"
             justify="center"
           >
-            <Text color="gray.500" _dark={{ color: 'gray.400' }} fontSize="lg">
-              Candidate Photo
-            </Text>
+            <Text fontSize="lg">Candidate Photo</Text>
           </Flex>
         </Grid>
       </Container>

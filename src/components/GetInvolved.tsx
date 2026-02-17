@@ -5,15 +5,7 @@ import { SecondaryButton } from '@/src/elements/SecondaryButton';
 
 export const GetInvolved = () => {
   return (
-    <Box
-      as="section"
-      id="volunteer"
-      py={20}
-      px={4}
-      bg="blue.700"
-      _dark={{ bg: 'blue.900' }}
-      color="white"
-    >
+    <Box as="section" id="volunteer" py={20} px={4}>
       <Container centered>
         <VStack gap={8} align="center">
           <Heading as="h2" size="2xl">

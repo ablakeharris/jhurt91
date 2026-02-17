@@ -8,12 +8,10 @@ interface IssueCardProps {
 
 export const IssueCard = ({ title, description }: IssueCardProps) => {
   return (
-    <Flex borderLeftWidth={4} borderLeftColor="blue.600" pl={6}>
+    <Flex borderLeftWidth={4} pl={6}>
       <VStack align="start" gap={0}>
         <CardHeading>{title}</CardHeading>
-        <Text fontSize="lg" color="gray.700" _dark={{ color: 'gray.300' }}>
-          {description}
-        </Text>
+        <Text fontSize="lg">{description}</Text>
       </VStack>
     </Flex>
   );
