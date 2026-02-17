@@ -1,18 +1,23 @@
-interface DonationButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+import { Button, ButtonProps } from '@chakra-ui/react';
+
+interface DonationButtonProps extends ButtonProps {
   amount: number;
 }
 
-export const DonationButton = ({
-  amount,
-  className = '',
-  ...props
-}: DonationButtonProps) => {
+export const DonationButton = ({ amount, ...props }: DonationButtonProps) => {
   return (
-    <button
-      className={`bg-primary-700 hover:bg-primary-800 text-white py-4 rounded-lg text-xl font-semibold transition-colors w-full ${className}`}
+    <Button
+      bg="blue.600"
+      color="white"
+      _hover={{ bg: 'blue.700' }}
+      borderRadius="lg"
+      fontSize="xl"
+      fontWeight="semibold"
+      py={4}
+      w="full"
       {...props}
     >
       ${amount}
-    </button>
+    </Button>
   );
 };

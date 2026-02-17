@@ -1,4 +1,6 @@
-interface ContainerProps {
+import { Box, BoxProps } from '@chakra-ui/react';
+
+interface ContainerProps extends BoxProps {
   children: React.ReactNode;
   width?: 'narrow' | 'normal' | 'wide';
   centered?: boolean;
@@ -8,18 +10,22 @@ export const Container = ({
   children,
   width = 'normal',
   centered = false,
+  ...props
 }: ContainerProps) => {
-  const widthClasses = {
-    narrow: 'max-w-2xl',
-    normal: 'max-w-4xl',
-    wide: 'max-w-6xl',
+  const maxWidthMap = {
+    narrow: '42rem',
+    normal: '56rem',
+    wide: '72rem',
   };
 
   return (
-    <div
-      className={`${widthClasses[width]} mx-auto ${centered ? 'text-center' : ''}`}
+    <Box
+      maxW={maxWidthMap[width]}
+      mx="auto"
+      textAlign={centered ? 'center' : 'initial'}
+      {...props}
     >
       {children}
-    </div>
+    </Box>
   );
 };

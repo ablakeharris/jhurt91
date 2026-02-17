@@ -1,9 +1,13 @@
-interface NavContainerProps {
+import { Box, BoxProps } from '@chakra-ui/react';
+
+interface NavContainerProps extends BoxProps {
   children: React.ReactNode;
 }
 
-export const NavContainer = ({ children }: NavContainerProps) => {
+export const NavContainer = ({ children, ...props }: NavContainerProps) => {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">{children}</div>
+    <Box maxW="7xl" mx="auto" px={{ base: 4, sm: 6, lg: 8 }} {...props}>
+      {children}
+    </Box>
   );
 };

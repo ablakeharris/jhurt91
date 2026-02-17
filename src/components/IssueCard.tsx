@@ -1,3 +1,4 @@
+import { VStack, Text, Flex } from '@chakra-ui/react';
 import { CardHeading } from '@/src/elements/CardHeading';
 
 interface IssueCardProps {
@@ -7,9 +8,13 @@ interface IssueCardProps {
 
 export const IssueCard = ({ title, description }: IssueCardProps) => {
   return (
-    <div className="border-l-4 border-primary-700 pl-6">
-      <CardHeading>{title}</CardHeading>
-      <p className="text-lg text-neutral-700 dark:text-neutral-300">{description}</p>
-    </div>
+    <Flex borderLeftWidth={4} borderLeftColor="blue.600" pl={6}>
+      <VStack align="start" gap={0}>
+        <CardHeading>{title}</CardHeading>
+        <Text fontSize="lg" color="gray.700" _dark={{ color: 'gray.300' }}>
+          {description}
+        </Text>
+      </VStack>
+    </Flex>
   );
 };

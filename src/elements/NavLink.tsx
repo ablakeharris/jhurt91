@@ -1,18 +1,16 @@
-interface NavLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+import {
+  Link as ChakraLink,
+  LinkProps as ChakraLinkProps,
+} from '@chakra-ui/react';
+
+interface NavLinkProps extends ChakraLinkProps {
   children: React.ReactNode;
 }
 
-export const NavLink = ({
-  children,
-  className = '',
-  ...props
-}: NavLinkProps) => {
+export const NavLink = ({ children, ...props }: NavLinkProps) => {
   return (
-    <a
-      className={`hover:text-primary-200 transition-colors ${className}`}
-      {...props}
-    >
+    <ChakraLink _hover={{ color: 'blue.200' }} transition="colors" {...props}>
       {children}
-    </a>
+    </ChakraLink>
   );
 };

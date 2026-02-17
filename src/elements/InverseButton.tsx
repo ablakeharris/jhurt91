@@ -1,18 +1,23 @@
-interface InverseButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+import { Button, ButtonProps } from '@chakra-ui/react';
+
+interface InverseButtonProps extends ButtonProps {
   children: React.ReactNode;
 }
 
-export const InverseButton = ({
-  children,
-  className = '',
-  ...props
-}: InverseButtonProps) => {
+export const InverseButton = ({ children, ...props }: InverseButtonProps) => {
   return (
-    <button
-      className={`bg-white text-primary-700 hover:bg-neutral-100 px-8 py-4 rounded-full text-lg font-semibold transition-colors ${className}`}
+    <Button
+      bg="white"
+      color="blue.600"
+      _hover={{ bg: 'gray.100' }}
+      borderRadius="full"
+      fontWeight="semibold"
+      fontSize="lg"
+      px={8}
+      py={4}
       {...props}
     >
       {children}
-    </button>
+    </Button>
   );
 };

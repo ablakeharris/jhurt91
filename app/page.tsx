@@ -1,3 +1,4 @@
+import { Box } from '@chakra-ui/react';
 import { Navigation } from '@/src/components/Navigation';
 import { Hero } from '@/src/components/Hero';
 import { EmailSignup } from '@/src/components/EmailSignup';
@@ -9,7 +10,7 @@ import { Footer } from '@/src/components/Footer';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
+    <Box minH="screen">
       <Navigation />
       <Hero />
       <EmailSignup />
@@ -18,6 +19,6 @@ export default function Home() {
       <Issues />
       <GetInvolved />
       <Footer />
-    </div>
+    </Box>
   );
 }

@@ -1,4 +1,6 @@
-interface PrimaryButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+import { Button, ButtonProps } from '@chakra-ui/react';
+
+interface PrimaryButtonProps extends ButtonProps {
   children: React.ReactNode;
   size?: 'sm' | 'md' | 'lg';
 }
@@ -6,21 +8,11 @@ interface PrimaryButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 export const PrimaryButton = ({
   children,
   size = 'md',
-  className = '',
   ...props
 }: PrimaryButtonProps) => {
-  const sizeClasses = {
-    sm: 'px-6 py-2 text-sm',
-    md: 'px-8 py-3',
-    lg: 'px-8 py-4 text-lg',
-  };
-
   return (
-    <button
-      className={`bg-primary-700 hover:bg-primary-800 text-white rounded-full font-semibold transition-colors ${sizeClasses[size]} ${className}`}
-      {...props}
-    >
+    <Button size={size} {...props}>
       {children}
-    </button>
+    </Button>
   );
 };

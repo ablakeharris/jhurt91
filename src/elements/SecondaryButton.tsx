@@ -1,4 +1,6 @@
-interface SecondaryButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+import { Button, ButtonProps } from '@chakra-ui/react';
+
+interface SecondaryButtonProps extends ButtonProps {
   children: React.ReactNode;
   size?: 'sm' | 'md' | 'lg';
 }
@@ -6,21 +8,11 @@ interface SecondaryButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElem
 export const SecondaryButton = ({
   children,
   size = 'md',
-  className = '',
   ...props
 }: SecondaryButtonProps) => {
-  const sizeClasses = {
-    sm: 'px-6 py-2 text-sm',
-    md: 'px-8 py-3',
-    lg: 'px-8 py-4 text-lg',
-  };
-
   return (
-    <button
-      className={`bg-secondary-600 hover:bg-secondary-700 text-white rounded-full font-semibold transition-colors ${sizeClasses[size]} ${className}`}
-      {...props}
-    >
+    <Button size={size} {...props}>
       {children}
-    </button>
+    </Button>
   );
 };

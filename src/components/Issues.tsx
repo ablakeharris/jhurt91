@@ -1,3 +1,4 @@
+import { Box, VStack, Flex } from '@chakra-ui/react';
 import { Container } from '@/src/elements/Container';
 import { SectionHeading } from '@/src/elements/SectionHeading';
 import { PrimaryButton } from '@/src/elements/PrimaryButton';
@@ -26,10 +27,17 @@ that prepare workers for the economy of tomorrow.`,
 
 export const Issues = () => {
   return (
-    <section id="issues" className="py-20 px-4 bg-white dark:bg-neutral-900">
+    <Box
+      as="section"
+      id="issues"
+      py={20}
+      px={4}
+      bg="white"
+      _dark={{ bg: 'gray.900' }}
+    >
       <Container>
         <SectionHeading centered>WHERE I STAND</SectionHeading>
-        <div className="space-y-8">
+        <VStack gap={8} align="stretch">
           {issues.map((issue) => (
             <IssueCard
               key={issue.title}
@@ -37,11 +45,11 @@ export const Issues = () => {
               description={issue.description}
             />
           ))}
-        </div>
-        <div className="text-center mt-12">
+        </VStack>
+        <Flex justify="center" mt={12}>
           <PrimaryButton>Learn More About My Platform</PrimaryButton>
-        </div>
+        </Flex>
       </Container>
-    </section>
+    </Box>
   );
 };

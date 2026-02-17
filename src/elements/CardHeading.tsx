@@ -1,13 +1,13 @@
-import { ReactNode } from 'react';
+import { Heading, HeadingProps } from '@chakra-ui/react';
 
-interface CardHeadingProps {
-  children: ReactNode;
+interface CardHeadingProps extends HeadingProps {
+  children: React.ReactNode;
 }
 
-export const CardHeading = ({ children }: CardHeadingProps) => {
+export const CardHeading = ({ children, ...props }: CardHeadingProps) => {
   return (
-    <h3 className="text-2xl font-bold text-neutral-900 dark:text-white mb-3">
+    <Heading as="h3" size="lg" mb={3} {...props}>
       {children}
-    </h3>
+    </Heading>
   );
 };

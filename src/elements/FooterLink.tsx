@@ -1,15 +1,16 @@
-interface FooterLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+import {
+  Link as ChakraLink,
+  LinkProps as ChakraLinkProps,
+} from '@chakra-ui/react';
+
+interface FooterLinkProps extends ChakraLinkProps {
   children: React.ReactNode;
 }
 
-export const FooterLink = ({
-  children,
-  className = '',
-  ...props
-}: FooterLinkProps) => {
+export const FooterLink = ({ children, ...props }: FooterLinkProps) => {
   return (
-    <a className={`hover:text-white transition-colors ${className}`} {...props}>
+    <ChakraLink _hover={{ color: 'white' }} transition="colors" {...props}>
       {children}
-    </a>
+    </ChakraLink>
   );
 };

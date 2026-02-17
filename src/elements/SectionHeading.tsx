@@ -1,4 +1,6 @@
-interface SectionHeadingProps {
+import { Heading, HeadingProps } from '@chakra-ui/react';
+
+interface SectionHeadingProps extends HeadingProps {
   children: React.ReactNode;
   centered?: boolean;
 }
@@ -6,12 +8,17 @@ interface SectionHeadingProps {
 export const SectionHeading = ({
   children,
   centered = false,
+  ...props
 }: SectionHeadingProps) => {
   return (
-    <h2
-      className={`text-4xl font-bold text-neutral-900 dark:text-white mb-6 ${centered ? 'text-center mb-12' : ''}`}
+    <Heading
+      as="h2"
+      size="2xl"
+      mb={centered ? 12 : 6}
+      textAlign={centered ? 'center' : 'initial'}
+      {...props}
     >
       {children}
-    </h2>
+    </Heading>
   );
 };
