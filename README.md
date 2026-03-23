@@ -1,4 +1,4 @@
-# Hurt In 91
+# jhurt91
 
 Campaign website for Jarren Hurt.
 
