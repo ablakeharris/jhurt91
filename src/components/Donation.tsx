@@ -3,6 +3,9 @@ import { Container } from '@/src/elements/Container';
 import { DonationButton } from '@/src/elements/DonationButton';
 import { TertiaryButton } from '@/src/elements/TertiaryButton';
 
+const ACTBLUE_URL =
+  'https://secure.actblue.com/my-express/engagement-hub/216656?origin=share';
+
 export const Donation = () => {
   const amounts = [10, 25, 50, 100, 250, 500];
 
@@ -11,11 +14,12 @@ export const Donation = () => {
       <Container centered>
         <VStack gap={8} align="center">
           <Heading as="h2" size="2xl">
-            DONATE TO JARREN HURT FOR STATE LEGISLATURE
+            DONATE TO JARREN HURT FOR INDIANA HOUSE DISTRICT 91
           </Heading>
           <Text fontSize="lg">
-            Every contribution helps us reach more voters and build a grassroots
-            movement.
+            Grassroots donations from Hoosiers like you power this campaign.
+            Every dollar helps us knock more doors, reach more voters, and win
+            District 91 for working families.
           </Text>
           <Grid
             templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)' }}
@@ -25,10 +29,12 @@ export const Donation = () => {
             mb={6}
           >
             {amounts.map((amount) => (
-              <DonationButton key={amount} amount={amount} />
+              <DonationButton key={amount} amount={amount} href={ACTBLUE_URL} />
             ))}
           </Grid>
-          <TertiaryButton>OTHER AMOUNT</TertiaryButton>
+          <a href={ACTBLUE_URL}>
+            <TertiaryButton>OTHER AMOUNT</TertiaryButton>
+          </a>
         </VStack>
       </Container>
     </Box>

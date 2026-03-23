@@ -17,21 +17,21 @@ export const About = () => {
             </Heading>
             <VStack align="start" gap={4} fontSize="lg">
               <Text>
-                Jarren Hurt is a public school teacher, community organizer, and
-                Democratic candidate running for State Legislature, committed to
-                ensuring every family has access to quality education,
-                affordable healthcare, and economic opportunity.
+                Jarren Hurt is a Navy submarine veteran, husband, and father of
+                three, born and raised in Indiana. An Eagle Scout and Indiana
+                University graduate, Jarren has deep roots in this community and
+                a lifelong commitment to service.
               </Text>
               <Text>
-                Born and raised in our community, Jarren has spent the last
-                decade working with students and families, witnessing firsthand
-                the challenges working families face. From underfunded schools
-                to rising housing costs, Jarren knows we need leaders who will
-                fight for real solutions.
+                After his service, Jarren built a career as a real estate agent
+                and small business owner, running a utility fiber optic
+                installation company. He knows what it takes to create jobs,
+                meet a payroll, and serve customers — and he brings that same
+                work ethic to his campaign for Indiana House District 91.
               </Text>
               <Text>
                 This campaign is about putting people over politics and building
-                a future where everyone has a fair shot at success.
+                a future where every Hoosier family has a fair shot at success.
               </Text>
             </VStack>
             <PrimaryButton mt={8}>Learn More</PrimaryButton>

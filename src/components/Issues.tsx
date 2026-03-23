@@ -6,22 +6,34 @@ import { IssueCard } from './IssueCard';
 
 const issues = [
   {
-    title: 'Education First',
-    description: `Our children deserve fully funded schools with smaller class sizes, competitive teacher 
-salaries, and modern resources. I'll fight to increase education funding and ensure every 
-student has the opportunity to succeed, regardless of their zip code.`,
+    title: 'Public Education',
+    description:
+      'Every child in Indiana deserves a quality public education. Jarren will fight to fully fund our public schools, support teachers, and ensure students have the resources they need to succeed — regardless of their zip code.',
   },
   {
-    title: 'Affordable Healthcare',
-    description: `Healthcare is a right, not a privilege. I support expanding Medicaid, lowering prescription 
-drug costs, and protecting coverage for pre-existing conditions. No family should go bankrupt 
-because of medical bills.`,
+    title: 'No Data Centers in Our Communities',
+    description:
+      'Massive data centers consume enormous amounts of water and energy while creating few local jobs. Jarren opposes subsidizing Big Tech at the expense of Indiana families and will push back against data center development that harms our communities.',
   },
   {
-    title: 'Economic Opportunity',
-    description: `Working families are struggling with rising costs while wages stagnate. I'll advocate for 
-raising the minimum wage, supporting small businesses, and investing in job training programs 
-that prepare workers for the economy of tomorrow.`,
+    title: 'Cut the Gas Tax',
+    description:
+      'Hoosiers are paying too much at the pump. Jarren supports cutting Indiana\u2019s gas tax to put money back in the pockets of working families and small businesses who depend on affordable transportation.',
+  },
+  {
+    title: 'Remove Toll Roads',
+    description:
+      'Toll roads are a tax on working Hoosiers who simply need to get to work. Jarren will fight to eliminate toll roads and restore free, open access to Indiana\u2019s highways for the people who built them.',
+  },
+  {
+    title: 'Raise the Minimum Wage',
+    description:
+      'Indiana\u2019s minimum wage has not kept pace with the cost of living. Jarren supports raising the minimum wage so that every Hoosier who works full time can afford to pay rent, buy groceries, and support their family.',
+  },
+  {
+    title: 'Housing for Hoosiers',
+    description:
+      'The housing shortage is squeezing Indiana families out of the communities they grew up in. Jarren will advocate for policies that increase the supply of affordable housing and keep homeownership within reach for working Hoosiers.',
   },
 ];
 

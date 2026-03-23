@@ -12,8 +12,9 @@ export const GetInvolved = () => {
             GET INVOLVED
           </Heading>
           <Text fontSize="xl">
-            This campaign is powered by people like you. Join us in building a
-            better future for our community.
+            This campaign is powered by Hoosiers who believe District 91
+            deserves a real voice in Indianapolis. Join us — knock doors, make
+            calls, or chip in to help us win.
           </Text>
           <Stack
             direction={{ base: 'column', sm: 'row' }}

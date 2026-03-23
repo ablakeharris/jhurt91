@@ -9,7 +9,7 @@ export const EmailSignup = () => {
       <Container width="narrow" centered>
         <VStack gap={6} align="center">
           <Box as="h2" fontSize="3xl" fontWeight="bold">
-            STAY UP TO DATE ON THE CAMPAIGN
+            STAY INFORMED ABOUT THE CAMPAIGN
           </Box>
           <Stack
             as="form"
@@ -22,8 +22,9 @@ export const EmailSignup = () => {
             <SecondaryButton type="submit">SIGN UP</SecondaryButton>
           </Stack>
           <Text fontSize="sm">
-            By signing up, you agree to receive campaign updates and event
-            invitations.
+            By signing up, you agree to receive campaign updates, event
+            invitations, and news from Jarren Hurt for Indiana House District
+            91. You may unsubscribe at any time.
           </Text>
         </VStack>
       </Container>

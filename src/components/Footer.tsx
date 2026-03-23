@@ -8,9 +8,18 @@ export const Footer = () => {
       <Container width="wide" centered>
         <VStack gap={4} align="center">
           <Text fontSize="lg" fontWeight="semibold">
-            JARREN HURT FOR STATE LEGISLATURE
+            JARREN HURT FOR INDIANA HOUSE DISTRICT 91
           </Text>
-          <Text>Paid for by Jarren Hurt for State Legislature</Text>
+          <Text>Paid for by Jarren Hurt for Indiana House District 91</Text>
+          <HStack gap={6} fontSize="sm" justify="center">
+            <FooterLink href="https://facebook.com/placeholder">
+              Facebook
+            </FooterLink>
+            <FooterLink href="https://x.com/placeholder">Twitter</FooterLink>
+            <FooterLink href="https://instagram.com/placeholder">
+              Instagram
+            </FooterLink>
+          </HStack>
           <HStack gap={6} fontSize="sm" justify="center">
             <FooterLink href="#">Privacy Policy</FooterLink>
             <FooterLink href="#">Terms of Service</FooterLink>
