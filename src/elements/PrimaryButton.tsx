@@ -11,7 +11,14 @@ export const PrimaryButton = ({
   ...props
 }: PrimaryButtonProps) => {
   return (
-    <Button size={size} {...props}>
+    <Button
+      size={size}
+      bg="gold.500"
+      color="navy.700"
+      fontWeight="bold"
+      _hover={{ bg: 'gold.600' }}
+      {...props}
+    >
       {children}
     </Button>
   );

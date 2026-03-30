@@ -16,6 +16,7 @@ export const SectionHeading = ({
       size="2xl"
       mb={centered ? 12 : 6}
       textAlign={centered ? 'center' : 'initial'}
+      color="navy.700"
       {...props}
     >
       {children}

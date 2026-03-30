@@ -5,10 +5,10 @@ import { EmailInput } from '@/src/elements/EmailInput';
 
 export const EmailSignup = () => {
   return (
-    <Box as="section" py={16} px={4}>
+    <Box as="section" py={16} px={4} bg="navy.800" color="white">
       <Container width="narrow" centered>
         <VStack gap={6} align="center">
-          <Box as="h2" fontSize="3xl" fontWeight="bold">
+          <Box as="h2" fontSize="3xl" fontWeight="bold" color="gold.500">
             STAY INFORMED ABOUT THE CAMPAIGN
           </Box>
           <Stack
@@ -21,7 +21,7 @@ export const EmailSignup = () => {
             <EmailInput placeholder="Enter your email" />
             <SecondaryButton type="submit">SIGN UP</SecondaryButton>
           </Stack>
-          <Text fontSize="sm">
+          <Text fontSize="sm" color="gray.300">
             By signing up, you agree to receive campaign updates, event
             invitations, and news from Jarren Hurt for Indiana House District
             91. You may unsubscribe at any time.

@@ -8,5 +8,14 @@ interface NavLinkProps extends ChakraLinkProps {
 }
 
 export const NavLink = ({ children, ...props }: NavLinkProps) => {
-  return <ChakraLink {...props}>{children}</ChakraLink>;
+  return (
+    <ChakraLink
+      fontWeight="semibold"
+      color="white"
+      _hover={{ color: 'gold.500', textDecoration: 'none' }}
+      {...props}
+    >
+      {children}
+    </ChakraLink>
+  );
 };

@@ -1,26 +1,26 @@
-import { Box, Heading, Text } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
+import { Navigation } from '@/src/components/Navigation';
+import { Hero } from '@/src/components/Hero';
+import { EmailSignup } from '@/src/components/EmailSignup';
+import { About } from '@/src/components/About';
+import { Donation } from '@/src/components/Donation';
+import { Issues } from '@/src/components/Issues';
+import { GetInvolved } from '@/src/components/GetInvolved';
+import { Footer } from '@/src/components/Footer';
+// import { ComingSoon } from '@/src/components/ComingSoon';
 
 export default function Home() {
+  // return <ComingSoon />;
   return (
-    <Box
-      minH="100vh"
-      display="flex"
-      flexDirection="column"
-      alignItems="center"
-      justifyContent="center"
-      textAlign="center"
-      px={4}
-      bg="white"
-    >
-      <Heading as="h1" size="4xl" mb={4} letterSpacing="tight">
-        JARREN HURT
-      </Heading>
-      <Heading as="h2" size="xl" fontWeight="normal" mb={6} color="gray.600">
-        Fighting for Indiana&apos;s House District 91
-      </Heading>
-      <Text fontSize="lg" color="gray.500" maxW="md">
-        Our site is coming soon. Check back shortly.
-      </Text>
+    <Box minH="screen">
+      <Navigation />
+      <Hero />
+      <EmailSignup />
+      <About />
+      <Donation />
+      <Issues />
+      <GetInvolved />
+      <Footer />
     </Box>
   );
 }

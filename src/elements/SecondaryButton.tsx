@@ -11,7 +11,14 @@ export const SecondaryButton = ({
   ...props
 }: SecondaryButtonProps) => {
   return (
-    <Button size={size} {...props}>
+    <Button
+      size={size}
+      bg="navy.700"
+      color="white"
+      fontWeight="bold"
+      _hover={{ bg: 'navy.800' }}
+      {...props}
+    >
       {children}
     </Button>
   );

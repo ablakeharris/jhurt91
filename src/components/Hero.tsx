@@ -5,16 +5,20 @@ import { SecondaryButton } from '@/src/elements/SecondaryButton';
 
 export const Hero = () => {
   return (
-    <Box as="section" pt={32} pb={20} px={4}>
+    <Box as="section" pt={32} pb={20} px={4} bg="navy.700" color="white">
       <Container centered>
-        <Heading as="h1" size="4xl">
+        <Heading as="h1" size="4xl" color="white">
           JARREN HURT
           <br />
-          <Box as="span">Fighting for Indiana&apos;s</Box>
+          <Box as="span" color="gold.500">
+            Fighting for Indiana&apos;s
+          </Box>
           <br />
-          <Box as="span">House District 91.</Box>
+          <Box as="span" color="gold.500">
+            House District 91.
+          </Box>
         </Heading>
-        <Text mt={6} fontSize="xl">
+        <Text mt={6} fontSize="xl" color="gray.200">
           Navy veteran. Hoosier. Fighting for working families in District 91.
         </Text>
         <Stack

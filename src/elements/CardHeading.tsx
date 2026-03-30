@@ -6,7 +6,7 @@ interface CardHeadingProps extends HeadingProps {
 
 export const CardHeading = ({ children, ...props }: CardHeadingProps) => {
   return (
-    <Heading as="h3" size="lg" mb={3} {...props}>
+    <Heading as="h3" size="lg" mb={3} color="navy.700" {...props}>
       {children}
     </Heading>
   );

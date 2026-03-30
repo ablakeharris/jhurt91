@@ -39,7 +39,7 @@ const issues = [
 
 export const Issues = () => {
   return (
-    <Box as="section" id="issues" py={20} px={4}>
+    <Box as="section" id="issues" py={20} px={4} bg="white">
       <Container>
         <SectionHeading centered>WHERE I STAND</SectionHeading>
         <VStack gap={8} align="stretch">

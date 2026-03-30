@@ -4,7 +4,7 @@ import { PrimaryButton } from '@/src/elements/PrimaryButton';
 
 export const About = () => {
   return (
-    <Box as="section" id="about" py={20} px={4}>
+    <Box as="section" id="about" py={20} px={4} bg="gray.50">
       <Container width="wide">
         <Grid
           templateColumns={{ base: '1fr', md: '1fr 1fr' }}
@@ -12,7 +12,7 @@ export const About = () => {
           alignItems="center"
         >
           <VStack align="start" gap={4}>
-            <Heading as="h2" size="2xl">
+            <Heading as="h2" size="2xl" color="navy.700">
               MEET JARREN
             </Heading>
             <VStack align="start" gap={4} fontSize="lg">

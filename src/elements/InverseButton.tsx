@@ -12,6 +12,10 @@ export const InverseButton = ({ children, ...props }: InverseButtonProps) => {
       fontSize="lg"
       px={8}
       py={4}
+      variant="outline"
+      borderColor="white"
+      color="white"
+      _hover={{ bg: 'white', color: 'navy.700' }}
       {...props}
     >
       {children}

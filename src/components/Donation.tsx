@@ -7,13 +7,13 @@ const ACTBLUE_URL =
 
 export const Donation = () => {
   return (
-    <Box as="section" py={20} px={4}>
+    <Box as="section" py={20} px={4} bg="gold.500">
       <Container centered>
         <VStack gap={8} align="center">
-          <Heading as="h2" size="2xl">
+          <Heading as="h2" size="2xl" color="navy.700">
             DONATE TO JARREN HURT FOR INDIANA HOUSE DISTRICT 91
           </Heading>
-          <Text fontSize="lg">
+          <Text fontSize="lg" color="navy.800">
             Grassroots donations from Hoosiers like you power this campaign.
             Every dollar helps us knock more doors, reach more voters, and win
             District 91 for working families.

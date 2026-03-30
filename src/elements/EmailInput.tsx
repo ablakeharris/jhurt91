@@ -14,6 +14,9 @@ export const EmailInput = ({ placeholder, ...props }: EmailInputProps) => {
       borderRadius="full"
       flex={1}
       maxW="28rem"
+      color="white"
+      borderColor="gray.500"
+      _placeholder={{ color: 'gray.400' }}
       {...props}
     />
   );

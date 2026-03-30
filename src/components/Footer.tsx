@@ -4,10 +4,10 @@ import { FooterLink } from '@/src/elements/FooterLink';
 
 export const Footer = () => {
   return (
-    <Box as="footer" py={12} px={4}>
+    <Box as="footer" py={12} px={4} bg="navy.900" color="gray.300">
       <Container width="wide" centered>
         <VStack gap={4} align="center">
-          <Text fontSize="lg" fontWeight="semibold">
+          <Text fontSize="lg" fontWeight="semibold" color="gold.500">
             JARREN HURT FOR INDIANA HOUSE DISTRICT 91
           </Text>
           <Text>Paid for by Jarren Hurt for Indiana House District 91</Text>
