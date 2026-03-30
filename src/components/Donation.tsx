@@ -1,14 +1,11 @@
-import { Box, Grid, Heading, Text, VStack } from '@chakra-ui/react';
+import { Box, Heading, Text, VStack } from '@chakra-ui/react';
 import { Container } from '@/src/elements/Container';
-import { DonationButton } from '@/src/elements/DonationButton';
-import { TertiaryButton } from '@/src/elements/TertiaryButton';
+import { PrimaryButton } from '@/src/elements/PrimaryButton';
 
 const ACTBLUE_URL =
   'https://secure.actblue.com/my-express/engagement-hub/216656?origin=share';
 
 export const Donation = () => {
-  const amounts = [10, 25, 50, 100, 250, 500];
-
   return (
     <Box as="section" py={20} px={4}>
       <Container centered>
@@ -21,19 +18,8 @@ export const Donation = () => {
             Every dollar helps us knock more doors, reach more voters, and win
             District 91 for working families.
           </Text>
-          <Grid
-            templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)' }}
-            gap={4}
-            maxW="2xl"
-            w="full"
-            mb={6}
-          >
-            {amounts.map((amount) => (
-              <DonationButton key={amount} amount={amount} href={ACTBLUE_URL} />
-            ))}
-          </Grid>
-          <a href={ACTBLUE_URL}>
-            <TertiaryButton>OTHER AMOUNT</TertiaryButton>
+          <a href={ACTBLUE_URL} target="_blank" rel="noopener noreferrer">
+            <PrimaryButton>DONATE NOW</PrimaryButton>
           </a>
         </VStack>
       </Container>
