@@ -27,7 +27,23 @@ export const Hero = () => {
           justify="center"
           mt={12}
         >
-          <SecondaryButton size="lg">DONATE</SecondaryButton>
+          <a
+            href="https://secure.actblue.com/my-express/engagement-hub/216656?origin=share"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SecondaryButton
+              as="span"
+              size="lg"
+              bg="transparent"
+              color="white"
+              borderWidth="2px"
+              borderColor="white"
+              _hover={{ bg: 'white', color: 'navy.700' }}
+            >
+              DONATE
+            </SecondaryButton>
+          </a>
           <PrimaryButton size="lg">VOLUNTEER</PrimaryButton>
         </Stack>
       </Container>

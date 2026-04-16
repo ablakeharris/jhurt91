@@ -1,7 +1,7 @@
 import { Box, Heading, Text, Stack, VStack } from '@chakra-ui/react';
 import Link from 'next/link';
 import { Container } from '@/src/elements/Container';
-import { InverseButton } from '@/src/elements/InverseButton';
+import { PrimaryButton } from '@/src/elements/PrimaryButton';
 import { SecondaryButton } from '@/src/elements/SecondaryButton';
 
 export const GetInvolved = () => {
@@ -23,9 +23,19 @@ export const GetInvolved = () => {
             justify="center"
           >
             <Link href="/volunteer" style={{ textDecoration: 'none' }}>
-              <InverseButton as="span">VOLUNTEER</InverseButton>
+              <PrimaryButton as="span" size="lg">
+                VOLUNTEER
+              </PrimaryButton>
             </Link>
-            <SecondaryButton size="lg">DONATE</SecondaryButton>
+            <a
+              href="https://secure.actblue.com/my-express/engagement-hub/216656?origin=share"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SecondaryButton as="span" size="lg">
+                DONATE
+              </SecondaryButton>
+            </a>
           </Stack>
         </VStack>
       </Container>
