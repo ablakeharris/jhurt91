@@ -1,10 +1,18 @@
-import { Box, Grid, Heading, VStack, Text, Flex } from '@chakra-ui/react';
+import {
+  Box,
+  Grid,
+  Heading,
+  VStack,
+  Text,
+  Flex,
+  Image,
+} from '@chakra-ui/react';
 import { Container } from '@/src/elements/Container';
 import { PrimaryButton } from '@/src/elements/PrimaryButton';
 
 export const About = () => {
   return (
-    <Box as="section" id="about" py={20} px={4} bg="gray.50">
+    <Box as="section" id="about" py={12} px={4} bg="gray.50">
       <Container width="wide">
         <Grid
           templateColumns={{ base: '1fr', md: '1fr 1fr' }}
@@ -41,8 +49,15 @@ export const About = () => {
             aspectRatio="1"
             align="center"
             justify="center"
+            overflow="hidden"
           >
-            <Text fontSize="lg">Candidate Photo</Text>
+            <Image
+              src="/images/pic2.jpg"
+              alt="Jarren Hurt"
+              w="100%"
+              h="100%"
+              objectFit="cover"
+            />
           </Flex>
         </Grid>
       </Container>

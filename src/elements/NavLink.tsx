@@ -11,7 +11,7 @@ export const NavLink = ({ children, ...props }: NavLinkProps) => {
   return (
     <ChakraLink
       fontWeight="semibold"
-      color="white"
+      color="gold.900"
       _hover={{ color: 'gold.500', textDecoration: 'none' }}
       {...props}
     >

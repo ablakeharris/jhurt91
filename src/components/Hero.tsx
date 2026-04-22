@@ -5,7 +5,7 @@ import { SecondaryButton } from '@/src/elements/SecondaryButton';
 
 export const Hero = () => {
   return (
-    <Box as="section" pt={32} pb={20} px={4} bg="navy.700" color="white">
+    <Box as="section" pt={16} pb={20} px={4} bg="navy.700" color="white">
       <Container centered>
         <Heading as="h1" size="4xl" color="white">
           JARREN HURT

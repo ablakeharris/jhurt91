@@ -7,7 +7,7 @@ const ACTBLUE_URL =
 
 export const Donation = () => {
   return (
-    <Box as="section" py={20} px={4} bg="gold.500">
+    <Box as="section" py={12} px={4} bg="gold.500">
       <Container centered>
         <VStack gap={8} align="center">
           <Heading as="h2" size="2xl" color="navy.700">

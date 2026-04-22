@@ -15,9 +15,9 @@ export default function Home() {
     <Box minH="screen">
       <Navigation />
       <Hero />
-      <EmailSignup />
       <About />
       <Donation />
+      <EmailSignup />
       <Issues />
       <GetInvolved />
       <Footer />

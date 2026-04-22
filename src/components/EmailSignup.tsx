@@ -5,7 +5,7 @@ import { EmailInput } from '@/src/elements/EmailInput';
 
 export const EmailSignup = () => {
   return (
-    <Box as="section" py={16} px={4} bg="navy.800" color="white">
+    <Box as="section" py={12} px={4} bg="navy.800" color="white">
       <Container width="narrow" centered>
         <VStack gap={6} align="center">
           <Box as="h2" fontSize="3xl" fontWeight="bold" color="gold.500">

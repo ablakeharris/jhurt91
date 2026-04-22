@@ -39,7 +39,7 @@ const issues = [
 
 export const Issues = () => {
   return (
-    <Box as="section" id="issues" py={20} px={4} bg="white">
+    <Box as="section" id="issues" py={12} px={4} bg="white">
       <Container>
         <SectionHeading centered>WHERE I STAND</SectionHeading>
         <VStack gap={8} align="stretch">
@@ -51,9 +51,6 @@ export const Issues = () => {
             />
           ))}
         </VStack>
-        <Flex justify="center" mt={12}>
-          <PrimaryButton>Learn More About My Platform</PrimaryButton>
-        </Flex>
       </Container>
     </Box>
   );
