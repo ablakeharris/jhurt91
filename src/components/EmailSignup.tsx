@@ -11,16 +11,25 @@ export const EmailSignup = () => {
           <Box as="h2" fontSize="3xl" fontWeight="bold" color="gold.500">
             STAY INFORMED ABOUT THE CAMPAIGN
           </Box>
-          <Stack
-            as="form"
-            direction={{ base: 'column', sm: 'row' }}
-            gap={4}
-            justify="center"
-            w="full"
+          <form
+            action="https://formspree.io/f/xdapgnny"
+            method="POST"
+            style={{ width: '100%' }}
           >
-            <EmailInput placeholder="Enter your email" />
-            <SecondaryButton type="submit">SIGN UP</SecondaryButton>
-          </Stack>
+            <Stack
+              direction={{ base: 'column', sm: 'row' }}
+              gap={4}
+              justify="center"
+              w="full"
+            >
+              <EmailInput
+                name="email"
+                required
+                placeholder="Enter your email"
+              />
+              <SecondaryButton type="submit">SIGN UP</SecondaryButton>
+            </Stack>
+          </form>
           <Text fontSize="sm" color="gray.300">
             By signing up, you agree to receive campaign updates, event
             invitations, and news from Jarren Hurt for Indiana House District

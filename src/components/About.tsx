@@ -42,7 +42,7 @@ export const About = () => {
                 a future where every Hoosier family has a fair shot at success.
               </Text>
             </VStack>
-            <PrimaryButton mt={8}>Learn More</PrimaryButton>
+            {/* <PrimaryButton mt={8}>Learn More</PrimaryButton> */}
           </VStack>
           <Flex
             borderRadius="lg"

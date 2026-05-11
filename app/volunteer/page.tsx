@@ -18,34 +18,35 @@ import { Container } from '@/src/elements/Container';
 import { PrimaryButton } from '@/src/elements/PrimaryButton';
 
 export default function VolunteerPage() {
-  const [location, setLocation] = useState('district91');
-  const [errors, setErrors] = useState({
-    firstName: false,
-    lastName: false,
-    zipCode: false,
-    email: false,
-    emailFormat: false,
-    phone: false,
-  });
+  // Undo this when ToS created
+  // const [location, setLocation] = useState('district91');
+  // const [errors, setErrors] = useState({
+  //   firstName: false,
+  //   lastName: false,
+  //   zipCode: false,
+  //   email: false,
+  //   emailFormat: false,
+  //   phone: false,
+  // });
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    const form = e.currentTarget;
-    const data = new FormData(form);
-    const email = String(data.get('email') ?? '');
-    const phone = String(data.get('phone') ?? '');
-    const newErrors = {
-      firstName: !data.get('firstName'),
-      lastName: !data.get('lastName'),
-      zipCode: !data.get('zipCode'),
-      email: !email,
-      emailFormat: !!email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email),
-      phone: !!phone && !/^\+?[\d\s\-().]{7,15}$/.test(phone),
-    };
-    if (Object.values(newErrors).some(Boolean)) {
-      e.preventDefault();
-      setErrors(newErrors);
-    }
-  }
+  // function handleSubmit(e: React.SubmitEvent<HTMLFormElement>) {
+  //   const form = e.currentTarget;
+  //   const data = new FormData(form);
+  //   const email = String(data.get('email') ?? '');
+  //   const phone = String(data.get('phone') ?? '');
+  //   const newErrors = {
+  //     firstName: !data.get('firstName'),
+  //     lastName: !data.get('lastName'),
+  //     zipCode: !data.get('zipCode'),
+  //     email: !email,
+  //     emailFormat: !!email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email),
+  //     phone: !!phone && !/^\+?[\d\s\-().]{7,15}$/.test(phone),
+  //   };
+  //   if (Object.values(newErrors).some(Boolean)) {
+  //     e.preventDefault();
+  //     setErrors(newErrors);
+  //   }
+  // }
 
   return (
     <Box minH="screen">
@@ -56,16 +57,18 @@ export default function VolunteerPage() {
             THANK YOU for helping us build a movement that will reach every
             corner of Indiana!
           </Heading>
-
-          <form
+          <Text fontWeight="bold" fontSize="sm" letterSpacing="wider" mb={4}>
+            COMING SOON
+          </Text>
+          {/* <form
             action="https://formspree.io/f/xdapgnny"
             method="POST"
             noValidate
             onSubmit={handleSubmit}
           >
-            <VStack gap={6} align="stretch">
-              {/* Contact Information */}
-              <Box>
+            <VStack gap={6} align="stretch"> */}
+          {/* Contact Information */}
+          {/* <Box>
                 <Text
                   fontWeight="bold"
                   fontSize="sm"
@@ -133,10 +136,10 @@ export default function VolunteerPage() {
                     </Field.Root>
                   </Flex>
                 </VStack>
-              </Box>
+              </Box> */}
 
-              {/* Additional Information */}
-              <Box>
+          {/* Additional Information */}
+          {/* <Box>
                 <Text
                   fontWeight="bold"
                   fontSize="sm"
@@ -208,7 +211,7 @@ export default function VolunteerPage() {
                 </PrimaryButton>
               </Box>
             </VStack>
-          </form>
+          </form> */}
         </Container>
       </Box>
       <Footer />

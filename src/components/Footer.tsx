@@ -21,9 +21,9 @@ export const Footer = () => {
             </FooterLink>
           </HStack>
           <HStack gap={6} fontSize="sm" justify="center">
-            <FooterLink href="#">Privacy Policy</FooterLink>
-            <FooterLink href="#">Terms of Service</FooterLink>
-            <FooterLink href="#">Contact</FooterLink>
+            {/* Undo this when ToS created */}
+            {/* <FooterLink href="/privacy">Privacy Policy</FooterLink> */}
+            {/* <FooterLink href="/terms">Terms of Service</FooterLink> */}
           </HStack>
         </VStack>
       </Container>

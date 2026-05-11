@@ -18,7 +18,12 @@ export const Donation = () => {
             Every dollar helps us knock more doors, reach more voters, and win
             District 91 for working families.
           </Text>
-          <a href={ACTBLUE_URL} target="_blank" rel="noopener noreferrer">
+          <a
+            style={{ pointerEvents: 'none', opacity: 0.5 }}
+            href={ACTBLUE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <PrimaryButton>DONATE NOW</PrimaryButton>
           </a>
         </VStack>

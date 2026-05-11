@@ -31,8 +31,20 @@ export const GetInvolved = () => {
               href="https://secure.actblue.com/my-express/engagement-hub/216656?origin=share"
               target="_blank"
               rel="noopener noreferrer"
+              // Undo this when ToS created
+              style={{ pointerEvents: 'none', opacity: 0.5 }}
             >
-              <SecondaryButton as="span" size="lg">
+              <SecondaryButton
+                as="span"
+                size="lg"
+                bg="transparent"
+                color="white"
+                borderWidth="2px"
+                borderColor="white"
+                _hover={{ bg: 'white', color: 'navy.700' }}
+                // Undo this when ToS created
+                disabled={true}
+              >
                 DONATE
               </SecondaryButton>
             </a>
