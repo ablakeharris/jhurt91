@@ -10,7 +10,6 @@ export const Footer = () => {
           <Text fontSize="lg" fontWeight="semibold" color="gold.500">
             JARREN HURT FOR INDIANA HOUSE DISTRICT 91
           </Text>
-          <Text>Paid for by Jarren Hurt for Indiana House District 91</Text>
           <HStack gap={6} fontSize="sm" justify="center">
             <FooterLink href="https://facebook.com/placeholder">
               Facebook
@@ -21,10 +20,10 @@ export const Footer = () => {
             </FooterLink>
           </HStack>
           <HStack gap={6} fontSize="sm" justify="center">
-            {/* Undo this when ToS created */}
-            {/* <FooterLink href="/privacy">Privacy Policy</FooterLink> */}
-            {/* <FooterLink href="/terms">Terms of Service</FooterLink> */}
+            <FooterLink href="/privacy">Privacy Policy</FooterLink>
+            <FooterLink href="/terms">Terms of Service</FooterLink>
           </HStack>
+          <Text fontSize="sm">Funded by Friends of Jarren Hurt</Text>
         </VStack>
       </Container>
     </Box>

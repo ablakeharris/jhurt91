@@ -8,12 +8,12 @@ const issues = [
   {
     title: 'Public Education',
     description:
-      'Every child in Indiana deserves a quality public education. Jarren will fight to fully fund our public schools, support teachers, and ensure students have the resources they need to succeed — regardless of their zip code.',
+      'Every child in Indiana deserves a quality public education. Jarren will fight to fully fund our public schools, support teachers, and ensure students have the resources they need to succeed — regardless of their zip code. Jarren is also a firm believer in universal Pre-K and free school lunch for K-12.',
   },
   {
     title: 'No Data Centers in Our Communities',
     description:
-      'Massive data centers consume enormous amounts of water and energy while creating few local jobs. Jarren opposes subsidizing Big Tech at the expense of Indiana families and will push back against data center development that harms our communities.',
+      'Massive data centers consume enormous amounts of water and energy while creating few local jobs. Jarren opposes subsidizing Big Tech at the expense of Indiana families and will push back against data center development that harms our communities and our environment.',
   },
   {
     title: 'Cut the Gas Tax',

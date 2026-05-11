@@ -29,9 +29,9 @@ export const Navigation = () => {
           </Link>
           {showMobileNav && (
             <HStack gap={8}>
-              <NavLink href="#about">About</NavLink>
-              <NavLink href="#issues">Issues</NavLink>
-              <NavLink href="#volunteer">Get Involved</NavLink>
+              <NavLink href="/#about">About</NavLink>
+              <NavLink href="/#issues">Issues</NavLink>
+              <NavLink href="/#volunteer">Get Involved</NavLink>
             </HStack>
           )}
         </Flex>

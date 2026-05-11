@@ -52,7 +52,7 @@ export const About = () => {
             overflow="hidden"
           >
             <Image
-              src="/images/pic2.jpg"
+              src="/images/pic2-cropped.jpg"
               alt="Jarren Hurt"
               w="100%"
               h="100%"
