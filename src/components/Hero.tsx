@@ -1,4 +1,5 @@
-import { Box, Flex, Grid, Heading, Image, Text, VStack } from '@chakra-ui/react';
+import { Box, Flex, Grid, Heading, Text, VStack } from '@chakra-ui/react';
+import Image from 'next/image';
 import { Container } from '@/src/elements/Container';
 
 export const Hero = () => {
@@ -23,11 +24,12 @@ export const Hero = () => {
               </Box>
             </Heading>
             <Text fontSize="xl" color="gray.200">
-              Navy veteran. Hoosier. Fighting for working families in District
-              91.
+              Navy veteran. Hoosier. Fighting for working families in
+              District&nbsp;91.
             </Text>
           </VStack>
           <Flex
+            position="relative"
             borderRadius="lg"
             aspectRatio="1"
             align="center"
@@ -35,11 +37,12 @@ export const Hero = () => {
             overflow="hidden"
           >
             <Image
-              src="/images/pic3.jpg"
-              alt="Jarren Hurt"
-              w="100%"
-              h="100%"
-              objectFit="cover"
+              src="/images/jarren-signing-document.jpg"
+              alt="Jarren Hurt signing a document"
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 50vw"
+              style={{ objectFit: 'cover' }}
             />
           </Flex>
         </Grid>

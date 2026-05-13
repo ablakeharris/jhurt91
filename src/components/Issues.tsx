@@ -1,7 +1,6 @@
-import { Box, VStack, Flex } from '@chakra-ui/react';
+import { Box, VStack } from '@chakra-ui/react';
 import { Container } from '@/src/elements/Container';
 import { SectionHeading } from '@/src/elements/SectionHeading';
-import { PrimaryButton } from '@/src/elements/PrimaryButton';
 import { IssueCard } from './IssueCard';
 
 const issues = [

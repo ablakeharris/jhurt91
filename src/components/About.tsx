@@ -1,14 +1,6 @@
-import {
-  Box,
-  Grid,
-  Heading,
-  VStack,
-  Text,
-  Flex,
-  Image,
-} from '@chakra-ui/react';
+import { Box, Grid, Heading, VStack, Text, Flex } from '@chakra-ui/react';
+import Image from 'next/image';
 import { Container } from '@/src/elements/Container';
-import { PrimaryButton } from '@/src/elements/PrimaryButton';
 
 export const About = () => {
   return (
@@ -45,6 +37,7 @@ export const About = () => {
             {/* <PrimaryButton mt={8}>Learn More</PrimaryButton> */}
           </VStack>
           <Flex
+            position="relative"
             borderRadius="lg"
             aspectRatio="1"
             align="center"
@@ -52,11 +45,11 @@ export const About = () => {
             overflow="hidden"
           >
             <Image
-              src="/images/pic2-cropped.jpg"
-              alt="Jarren Hurt"
-              w="100%"
-              h="100%"
-              objectFit="cover"
+              src="/images/jarren-with-flag-cropped.jpg"
+              alt="Jarren Hurt with American flag"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              style={{ objectFit: 'cover' }}
             />
           </Flex>
         </Grid>
