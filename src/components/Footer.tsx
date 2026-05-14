@@ -11,13 +11,16 @@ export const Footer = () => {
             JARREN HURT FOR INDIANA HOUSE DISTRICT 91
           </Text>
           <HStack gap={6} fontSize="sm" justify="center">
-            {/* <FooterLink href="https://facebook.com/placeholder">
+            <FooterLink href="https://www.facebook.com/profile.php?id=61588802915638">
               Facebook
             </FooterLink>
-            <FooterLink href="https://x.com/placeholder">Twitter</FooterLink>
-            <FooterLink href="https://instagram.com/placeholder">
+            <FooterLink href="https://www.instagram.com/srhurt91/">
               Instagram
-            </FooterLink> */}
+            </FooterLink>
+            <FooterLink href="https://www.tiktok.com/@jarrenhurt91">
+              TikTok
+            </FooterLink>
+            <FooterLink href="https://x.com/srhurt91">X</FooterLink>
           </HStack>
           <HStack gap={6} fontSize="sm" justify="center">
             <FooterLink href="/privacy">Privacy Policy</FooterLink>
